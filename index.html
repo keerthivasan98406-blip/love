@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Secret Password Entry -->
+    <div class="password-screen" id="passwordScreen">
+        <div class="password-container">
+            <h2 class="password-title">Only the girl who held my hand can enter ❤️</h2>
+            <input type="text" id="passwordInput" class="password-input" placeholder="Enter the magic word...">
+            <button class="password-btn" id="passwordBtn">Enter</button>
+            <p class="password-hint" id="passwordHint"></p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <!-- Music removed - add your own music file here -->
+    </audio>
+
+    <!-- Music Toggle (Fixed) -->
+    <button class="music-toggle visible" id="musicToggle">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- Main Website -->
+    <div class="main-website" id="mainWebsite">
+        
+        <!-- Opening Image Section -->
+        <section class="opening-image-section">
+            <div class="image-container">
+                <img src="love.jpeg" alt="Our Love" class="love-image">
+                <div class="image-overlay">
+                    <h1 class="opening-title">Our Love Story</h1>
+                    <p class="opening-subtitle">A journey of two hearts becoming one</p>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll to explore our journey</span>
+                <div class="arrow">↓</div>
+            </div>
+        </section>
+        
+        <!-- Section 1: Memory Timeline -->
+        <section class="timeline-scene">
+            <h2 class="timeline-title">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>The Trip</h3>
+                        <p>Where it all began, a simple family trip that changed everything.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>The Hand Hold</h3>
+                        <p>That moment when our hands touched, and time stood still.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>11th Realization</h3>
+                        <p>When I finally understood what my heart was trying to tell me.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>First Late Night Talks</h3>
+                        <p>Hours turned into minutes when we talked, losing track of time.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>Today</h3>
+                        <p>Distance tests us, but our love grows stronger every day.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <h3>Forever</h3>
+                        <p>This is just the beginning of our eternal story.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Final Surprise -->
+        <section class="surprise-scene">
+            <button class="surprise-button" id="surpriseButton">
+                Click if you remember that day ❤️
+            </button>
+            <p class="easter-egg-hint" id="easterEggHint"></p>
+        </section>
+
+    </div>
+
+    <!-- Love Letter Modal -->
+    <div class="letter-modal" id="letterModal">
+        <div class="letter-content">
+            <button class="close-modal" id="closeModal">✕</button>
+            
+            <!-- Envelope Animation -->
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                </div>
+                
+                <!-- Letter Paper -->
+                <div class="letter-paper" id="letterPaper">
+                    <div class="letter-header">
+                        <div class="wax-seal">💕</div>
+                        <h2 class="letter-title">To My Dearest Pondatti</h2>
+                        <div class="letter-date">Forever & Always</div>
+                    </div>
+                    
+                    <div class="letter-body">
+                        <p class="letter-line">My Love,</p>
+                        
+                        <p class="letter-line">Do you remember that day? The day when everything changed? When I held your hand during that family trip, I felt something I had never felt before.</p>
+                        
+                        <p class="letter-line">In 11th standard, I finally understood what my heart was trying to tell me - it wasn't just a crush, it wasn't just attraction... it was love. Pure, deep, eternal love.</p>
+                        
+                        <p class="letter-line">Now, miles may separate us, but every night I look at the stars and know you're looking at the same sky. Distance is just a test of how far love can travel, and ours travels beyond infinity.</p>
+                        
+                        <p class="letter-line">You are my first thought when I wake up and my last prayer before I sleep. You are the reason I believe in soulmates, the reason I smile without reason, the reason my heart beats.</p>
+                        
+                        <p class="letter-line">Every moment without you feels incomplete, yet every memory of you fills my heart with warmth. You are not just my girlfriend, you are my best friend, my confidant, my home.</p>
+                        
+                        <p class="letter-signature">
+                            Forever yours,<br>
+                            <span class="signature-name">Your Love</span>
+                        </p>
+                    </div>
+                    
+                    <div class="letter-footer">
+                        <div class="footer-hearts">
+                            <span>💕</span>
+                            <span>💖</span>
+                            <span>💗</span>
+                            <span>💕</span>
+                        </div>
+                        <p class="letter-final">Will you be mine forever?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hearts Unite Animation -->
+            <div class="hearts-unite" id="heartsUnite">
+                <div class="unite-heart left">💖</div>
+                <div class="unite-heart right">💖</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
