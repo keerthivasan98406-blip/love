@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Button click handler
     if (surpriseButton) {
-        surpriseButton.onclick = function() {
+        surpriseButton.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             console.log('Button clicked! Opening love letter...');
             clickCount++;
             
@@ -117,6 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 easterEggHint.textContent = "✨ You found the secret! You really remember that day! ✨";
                 easterEggHint.classList.add('visible');
             }
+            
+            return false;
         };
     }
 
